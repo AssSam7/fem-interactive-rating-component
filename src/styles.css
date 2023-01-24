@@ -1,6 +1,12 @@
 /* Font Face Imports */
 @import url(//fonts.googleapis.com/css?family=Overpass);
 
+/* CSS Variables */
+:root {
+  --color-primary-orange: #fb7413;
+  --color-white: #fff;
+}
+
 /* Base Reset Styles */
 * {
   box-sizing: border-box;
@@ -31,7 +37,7 @@ a {
 .card {
   padding: 3.2rem;
   width: 40rem;
-  height: 35rem;
+  height: 41rem;
 
   display: flex;
   flex-direction: column;
@@ -39,7 +45,7 @@ a {
   justify-content: flex-start;
 
   background: #262e38;
-  color: #fff;
+  color: var(--color-white);
   border-radius: 20px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -105,4 +111,19 @@ a {
 .rating-btn:focus {
   color: #fff;
   background: #7c8798;
+}
+
+.rating-btn-submit {
+  padding: 1.2rem;
+  border: none;
+  outline: 0;
+  border-radius: 25px;
+  background: var(--color-primary-orange);
+  color: var(--color-white);
+
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 2px;
 }
