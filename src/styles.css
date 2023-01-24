@@ -79,9 +79,12 @@ a {
 }
 
 .rating-btn {
+  cursor: pointer;
   width: 5rem;
   height: 5rem;
   border-radius: 100px;
+  border: none;
+  outline: 0;
   color: #7c8798;
   background: #262e38;
   font-weight: 700;
