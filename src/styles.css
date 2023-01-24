@@ -1,0 +1,16 @@
+/* Base Reset Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: inherit;
+  font-size: 62.5%; /* Making 1px=10px from the base 16px */
+}
+
+body {
+  min-height: 100vh;
+  background: #131518;
+}
