@@ -23,7 +23,11 @@ body {
   align-items: center;
 }
 
-/* Rating Card */
+a {
+  text-decoration: none;
+}
+
+/* Rating Card Layout */
 .card {
   padding: 3.2rem;
   width: 40rem;
@@ -40,13 +44,6 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.card-title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 35px;
-}
-
 .card-icon-wrapper {
   padding: 2rem;
   width: 48px;
@@ -58,4 +55,51 @@ body {
   align-items: center;
 
   background: #262e38;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 35px;
+}
+
+.card-description {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #969fad;
+}
+
+/* Rating Buttons */
+.rating-btn-container {
+  flex: 1;
+
+  display: flex;
+  gap: 2rem;
+}
+
+.rating-btn {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100px;
+  color: #7c8798;
+  background: #262e38;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating-btn:hover {
+  color: #fff;
+  background-color: #fc7614;
+}
+
+.rating-btn:focus {
+  color: #fff;
+  background: #7c8798;
 }
