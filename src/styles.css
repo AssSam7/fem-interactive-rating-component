@@ -1,3 +1,9 @@
+/* Font Face Imports */
+@font-face {
+  font-family: overPass;
+  src: url(https://fonts.google.com/specimen/Overpass);
+}
+
 /* Base Reset Styles */
 * {
   box-sizing: border-box;
@@ -12,6 +18,7 @@ html {
 
 body {
   min-height: 100vh;
+  font-family: overPass;
   background: #131518;
 
   display: flex;
@@ -24,6 +31,7 @@ body {
   width: 40rem;
   height: 35rem;
   background: #262e38;
+  color: #fff;
   border-radius: 20px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
