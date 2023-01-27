@@ -114,6 +114,7 @@ a {
 }
 
 .rating-btn-submit {
+  cursor: pointer;
   padding: 1.2rem;
   border: none;
   outline: 0;
