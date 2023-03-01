@@ -60,7 +60,7 @@ a {
   justify-content: center;
   align-items: center;
 
-  background: #262e38;
+  background: rgba(34, 2, 0, 0.2);
 }
 
 .card-title {
@@ -85,6 +85,7 @@ a {
 }
 
 .rating-btn {
+  margin-top: -4px;
   cursor: pointer;
   width: 5rem;
   height: 5rem;
@@ -103,12 +104,18 @@ a {
   align-items: center;
 }
 
+input[type="radio"] {
+  width: 0px;
+  height: 0px;
+  visibility: hidden;
+}
+
 .rating-btn:hover {
   color: #fff;
   background-color: #fc7614;
 }
 
-.rating-btn:focus {
+input[type="radio"]:checked ~ .rating-btn {
   color: #fff;
   background: #7c8798;
 }
@@ -127,4 +134,9 @@ a {
   font-size: 15px;
   line-height: 19px;
   letter-spacing: 2px;
+}
+
+.rating-btn-submit:hover {
+  background: var(--color-white);
+  color: var(--color-primary-orange);
 }
