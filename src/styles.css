@@ -42,7 +42,6 @@ a {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  justify-content: flex-start;
 
   background: #262e38;
   color: var(--color-white);
