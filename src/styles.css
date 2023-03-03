@@ -147,8 +147,8 @@ input[type="radio"]:checked ~ .rating-btn {
 
 /* Rating Card - Success */
 .selected-rating {
-  background: #374251;
-  padding: 4px 20px;
+  background: #303a46;
+  padding: 0.4rem 2rem;
   border-radius: 16px;
 
   font-weight: 400;
