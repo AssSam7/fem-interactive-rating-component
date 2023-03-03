@@ -41,13 +41,17 @@ a {
 
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  /* gap: 2rem; */
+  gap: 32px;
+  align-items: center;
 
   background: #262e38;
   color: var(--color-white);
   border-radius: 20px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+
+/* Rating Card - Input */
 
 .card-icon-wrapper {
   padding: 2rem;
@@ -138,4 +142,38 @@ input[type="radio"]:checked ~ .rating-btn {
 .rating-btn-submit:hover {
   background: var(--color-white);
   color: var(--color-primary-orange);
+}
+
+/* Rating Card - Success */
+.selected-rating {
+  background: #374251;
+  padding: 4px 20px;
+  border-radius: 16px;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--color-primary-orange);
+}
+
+.success-msg-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.success-msg-wrapper > h2 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 35px;
+  color: var(--color-white);
+}
+
+.success-msg-wrapper > p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  color: #969fad;
 }
