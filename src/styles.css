@@ -5,6 +5,7 @@
 :root {
   --color-primary-orange: #fb7413;
   --color-white: #fff;
+  --bp-mobile: 375px;
 }
 
 /* Base Reset Styles */
@@ -37,13 +38,13 @@ a {
 .card {
   padding: 3.2rem;
   width: 40rem;
-  height: 41rem;
+  height: auto;
 
   display: flex;
   flex-direction: column;
-  /* gap: 2rem; */
-  gap: 32px;
-  align-items: center;
+  gap: 2rem;
+  /* gap: 32px;
+  align-items: center; */
 
   background: #262e38;
   color: var(--color-white);
@@ -55,26 +56,26 @@ a {
 
 .card-icon-wrapper {
   padding: 2rem;
-  width: 48px;
-  height: 48px;
+  width: 4.8rem;
+  height: 4.8rem;
   border-radius: 100px;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  background: rgba(34, 2, 0, 0.2);
+  background: #303a46;
 }
 
 .card-title {
   font-weight: 700;
-  font-size: 28px;
+  font-size: 2.8rem;
   line-height: 35px;
 }
 
 .card-description {
   font-weight: 400;
-  font-size: 15px;
+  font-size: 1.5rem;
   line-height: 24px;
   color: #969fad;
 }
@@ -98,7 +99,7 @@ a {
   color: #7c8798;
   background: #262e38;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 24px;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
 
@@ -134,7 +135,7 @@ input[type="radio"]:checked ~ .rating-btn {
 
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 1.5rem;
   line-height: 19px;
   letter-spacing: 2px;
 }
@@ -151,7 +152,7 @@ input[type="radio"]:checked ~ .rating-btn {
   border-radius: 16px;
 
   font-weight: 400;
-  font-size: 15px;
+  font-size: 1.5rem;
   line-height: 24px;
   color: var(--color-primary-orange);
 }
@@ -165,15 +166,22 @@ input[type="radio"]:checked ~ .rating-btn {
 
 .success-msg-wrapper > h2 {
   font-weight: 700;
-  font-size: 28px;
+  font-size: 2.8rem;
   line-height: 35px;
   color: var(--color-white);
 }
 
 .success-msg-wrapper > p {
   font-weight: 400;
-  font-size: 15px;
+  font-size: 1.5rem;
   line-height: 24px;
   text-align: center;
   color: #969fad;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 375px) {
+  html {
+    font-size: 50%;
+  }
 }
