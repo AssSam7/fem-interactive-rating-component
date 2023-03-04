@@ -7,7 +7,7 @@ let rating = "";
 
 function getSuccessHTML() {
   return `<img
-        src="../images/illustration-thank-you.svg"
+        src="./images/illustration-thank-you.svg"
         alt="Thank you for the rating"
         width="162"
         height="108"
