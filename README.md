@@ -22,3 +22,5 @@ Users should be able to:
 As this a straight forward component, I have chosen to stick without using any library/framework approach with pure CSS, and Javascript. Most of the CSS3 concepts have been applied for responsiveness with the desktop-first approach.
 
 ## Live URL 🚀
+
+https://statuesque-starburst-cb9ab6.netlify.app/
