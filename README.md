@@ -2,9 +2,9 @@
 
 ![Design preview for the Interactive rating component coding challenge](./design/desktop-preview.jpg)
 
-## Welcome! 👋
+# Welcome! 👋
 
-## The challenge
+## Challenge
 
 The challenge is to build out this interactive rating component and get it looking as close to the design as possible.
 
